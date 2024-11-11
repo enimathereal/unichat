@@ -1,0 +1,118 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f4f6f9;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: linear-gradient(135deg, #3498db, #8e44ad);
+  }
+  
+  /* Login Container */
+  .login-container {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+  }
+  
+  h1 {
+    font-size: 2.5rem;
+    color: #3498db;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    color: #7f8c8d;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Label and Input Alignment */
+  .form-group {
+    margin-bottom: 25px;
+    position: relative;
+    text-align: left;
+  }
+  
+  label {
+    font-size: 1.1rem;
+    color: #2c3e50;
+    position: absolute;
+    top: -15px;
+    left: 10px;
+    background-color: white;
+    padding: 0 5px;
+    z-index: 2;
+    transition: all 0.3s ease;
+  }
+  
+  /* Input Field Styling */
+  input {
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    background-color: #ecf0f1;
+    font-size: 1rem;
+    margin-top: 25px;
+    transition: box-shadow 0.3s;
+    box-sizing: border-box;
+  }
+  
+  /* Input Focus Styling */
+  input:focus {
+    outline: none;
+    box-shadow: 0 0 8px rgba(52, 152, 219, 0.7);
+  }
+  
+  /* Login Button Styling */
+  button {
+    width: 100%;
+    padding: 14px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: box-shadow 0.3s;
+  }
+  
+  button:hover {
+    box-shadow: 0 5px 15px rgba(52, 152, 219, 0.4);
+  }
+  
+  button:active {
+    transform: translateY(3px);
+    box-shadow: none;
+  }
+  
+  /* Sign Up Link */
+  .signup-link {
+    font-size: 1rem;
+    margin-top: 20px;
+  }
+  
+  .signup-link a {
+    color: #3498db;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  
+  .signup-link a:hover {
+    color: #2980b9;
+  }
+  

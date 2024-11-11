@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>UniChat - Sign Up</title>
+  <link rel="stylesheet" href="signup.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="signup-container">
+    <h1>UniChat</h1>
+    <p>Create your account to connect with peers!</p>
+
+    <form id="signupForm">
+      <!-- Full Name -->
+      <div class="form-group">
+        <label for="fullName">Full Name</label>
+        <input type="text" id="fullName" name="fullName" required>
+      </div>
+
+      <!-- Username -->
+      <div class="form-group">
+        <label for="username">Username</label>
+        <input type="text" id="username" name="username" required>
+      </div>
+
+      <!-- Email -->
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+
+      <!-- Password -->
+      <div class="form-group">
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" required>
+      </div>
+
+      <!-- Confirm Password -->
+      <div class="form-group">
+        <label for="confirmPassword">Confirm Password</label>
+        <input type="password" id="confirmPassword" name="confirmPassword" required>
+      </div>
+
+      <!-- Submit Button -->
+      <button type="submit">Sign Up</button>
+    </form>
+
+    <p class="login-link">Already have an account? <a href="index.html">Log In</a></p>
+  </div>
+
+  <script>
+    // Handle form submission
+    document.getElementById('signupForm').addEventListener('submit', function (e) {
+      e.preventDefault();
+      
+      const username = document.getElementById('username').value;
+      const fullName = document.getElementById('fullName').value;
+      const email = document.getElementById('email').value;
+      const password = document.getElementById('password').value;
+      const confirmPassword = document.getElementById('confirmPassword').value;
+
+      // Validate if the passwords match
+      if (password !== confirmPassword) {
+        alert('Passwords do not match!');
+        return;
+      }
+
+      // Save username, fullName, email, and password to localStorage
+      localStorage.setItem('username', username);
+      localStorage.setItem('fullName', fullName);
+      localStorage.setItem('email', email);
+      localStorage.setItem('password', password);
+
+      // Redirect to index page after successful signup
+      window.location.href = 'index.html'; // Replace with your desired redirect URL
+    });
+  </script>
+</body>
+</html>
