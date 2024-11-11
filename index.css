@@ -40,13 +40,13 @@ header h1 {
   letter-spacing: 2px;
   background-color: #ffd000;
   border-radius: 12px;
-  box-shadow: 2px 2px 0px #000000, 4px 4px 0px #3d489f;
+  box-shadow: 2px 2px 0px #000000, 4px 4px 0px #ffd000;
   transition: all 0.3s ease;
 }
 
 header h1:hover {
   transform: translateY(-3px);
-  box-shadow: 4px 4px 0px #000000, 8px 8px 0px #3d489f;
+  box-shadow: 4px 4px 0px #000000, 8px 8px 0px #ffd000;
 }
 
 header p {
